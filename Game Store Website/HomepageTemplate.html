@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Homepage stuff">
+    <meta name="keywords" content="Kitty, skills, university">
+    <meta name="author" content="Joe Blogs">
+    <title>Kitty's Homepage</title>
+
+    <script language="javascript">
+        function StartMove() {
+            var cssBGImage = new Image();
+            cssBGImage.src = "gamescovers/download(1(";
+
+            window.cssMaxWidth = cssBGImage.width;
+            window.cssXPos = 0;
+            setInterval("DoMoving()", 1000);
+        }
+        var myVar = setInterval(function () {MoveBackGround()}, 1);
+        function DoMoving(){
+            clearInterval(myVar);
+        }
+
+        function SwitchImage() {
+            window.cssXPos = window.cssXPos + 1;
+            if (window.cssXPos >= window.cssMaxWidth) {
+                window.cssXPos = 0;
+            }
+            toMove = document.getElementById("scroller");
+            toMove.style.backgroundPosition = window.cssXPos + "px 0px";
+            
+        }
+    </script>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+        
+        #scroller {
+            background-color: #424242;
+            padding-left: 40px;
+            height: 150px;
+            background-image: url(gamescovers/download(1).jpg);
+            align-self: center;
+        }
+    </style>
+</head>
+<body onload="StartMove()">
+<body>
+    <p><img src="images/cat.png" alt="Picture of kitty" width="150" height="200" />
+    </p>
+    <div id="scroller"> </div>
+    <h1>All about me</h1>
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+
+    <h2>My skills I've learned so far at University</h2>
+
+    <p>
+        Create a list of skills using the ul tag.
+    </p>
+    <table>
+        <caption>Caption: A table with not very much in it </caption>
+        <tr>
+            <th>heading1</th>
+            <th>heading2</th>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>b</td>
+        </tr>
+        <tr>
+            <td>c</td>
+            <td>d</td>
+        </tr>
+        <tr>
+            <td>e</td>
+            <td>f</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
