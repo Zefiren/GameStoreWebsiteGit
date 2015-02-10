@@ -11,23 +11,28 @@
 <style>
     #centre {
         background-image: url(images/background.jpg);
-        display: block;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
         background-color: #FF00FF;
         background-blend-mode: multiply;
-        height: 1000px;
+        height: 3000px;
         margin-left: auto;
         margin-right: auto;
         width: 50%;
+        background-size: 100%;
     }
     
     #background {
         background-image: url(images/2014-06-Mortal-Kombat-X-Cover-Game-2014-Wide-1600x1000.jpg);
+        background-attachment: fixed;
         background-repeat: no-repeat;
-        background-size: 100% 100%;
-        width: auto ;
+        background-size: 100%;
         margin-top: 100px;;
     }
     
+    header{
+        background-color: #0000FF;
+    }
     header h1{
         font-size: 2.5em; 
         float: left;
@@ -36,6 +41,7 @@
     header.img{
         float: right;
     }
+    
     nav a{
         padding: 5%;
     }
@@ -44,7 +50,7 @@
 <header>
     <h1 align="center">AG Game Store</h1>
     <img id="logo" src="images/cat.png" style="width:128px;height:128px"> 
-        <nav>
+        <nav >
         <a href=# >PS4</a>
         <a href=# >XBOX ONE</a>
         <a href=# >PS3</a>
@@ -54,16 +60,10 @@
     </nav>
 </header>    
 <body>
-
-    
     <div id="background">
         <div id="centre">
-
-
         </div>
     </div>
-
-
 </body>
 
 </html>
