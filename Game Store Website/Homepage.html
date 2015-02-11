@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="Games, Anton, university">
-    <meta name="author" content="Joe Blogs">
+    <meta name="author" content="Grzegorz Goral, Anton Gashi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AG Game Store</title>
 </head>
 
@@ -27,38 +28,118 @@
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: 100%;
-        margin-top: 100px;;
+        margin-top: 0;
+        ;
     }
     
-    header{
-        background-color: #0000FF;
-    }
-    header h1{
-        font-size: 2.5em; 
-        float: left;
+    header {
+        background-color: #00005C;
+        padding: 0;
+        margin-bottom: 0px;
     }
     
-    header.img{
-        float: right;
+    header img {
+        width: 25%;
+        padding-left: 2%;
     }
     
-    nav a{
-        padding: 5%;
+    div{
+        display: block;
+    }
+    
+    #primaryWrapper{
+        width: 100%;    
+        background-color: #000000;  
+        border-top: 1px solid #555555;
+        border-bottom: 1px solid #555555;
+    }
+    
+    header ul {
+        font-size: 1.8em;
+        list-style-type: none;
+        margin: 0;
+        padding: 1em 0;
+        text-indent: 0;
+        text-align: center;
+        display: table-row;
+    }
+    nav{
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        width: 950px;
+    }
+/*
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding-left: 0px;
+    }
+*/
+    header nav ul li {
+        font-size: 1em;
+        margin: 0;
+        list-style-type: none;
+        border-left: 1px solid #555555;
+        border-right: 1px solid #555555;
+        height: 2em;
+        vertical-align: middle;
+        display: table-cell;
+    }
+    
+    nav ul li a {
+        display: block;
+        color: #A1A1A1;
+        text-decoration: none;
+    }
+    
+    nav ul li:hover,
+    nav ul li a.active {
+        background-color: #0000AC;
+        color: #ffffff
+    }
+    
+    
+/*
+    nav ul li a:hover, 
+    nav ul li a.active{color: #ffffff}
+    
+*/
+    div.primaryWrapper {
+        width: 100%;
+        background-color: #333333;
+        border-top: 1px solid #555555;
+    }
+    
+    
+    * {
+        margin: 0px;
+        padding: 0px;
     }
 </style>
 
 <header>
-    <h1 align="center">AG Game Store</h1>
-    <img id="logo" src="images/cat.png" style="width:128px;height:128px"> 
-        <nav >
-        <a href=# >PS4</a>
-        <a href=# >XBOX ONE</a>
-        <a href=# >PS3</a>
-        <a href=# >XBOX 360</a>
-        <a href=# >PC</a>
-        <a href=# >DS</a>
-    </nav>
-</header>    
+    <a href="Homepage.html"><img id="logo" src="images/logo.png"></a>
+    <div id="primaryWrapper">
+        <nav>
+            <ul>
+                <li><a href=#>PS4</a>
+                </li>
+                <li><a href=#>XBOX ONE</a>
+                </li>
+                <li><a href=#>PS3</a>
+                </li>
+                <li><a href=#>XBOX 360</a>
+                </li>
+                <li><a href=#>PC</a>
+                </li>
+                <li><a href=#>DS</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
 <body>
     <div id="background">
         <div id="centre">
