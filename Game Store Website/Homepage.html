@@ -5,24 +5,28 @@
     <meta charset="UTF-8">
     <meta name="keywords" content="Games, Anton, university">
     <meta name="author" content="Grzegorz Goral, Anton Gashi">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <title>AG Game Store</title>
-</head>
+    <style>
+            
 
-<style>
     #centre {
         background-image: url(images/background.jpg);
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-color: #FF00FF;
         background-blend-mode: multiply;
-        height: 3000px;
         margin-left: auto;
         margin-right: auto;
         width: 55%;
+        height: 3000px;
         background-size: 100% 200%;
+        font-size: 1em;
+        
     }
-    
+
+        
     #background {
         background-image: url(images/2014-06-Mortal-Kombat-X-Cover-Game-2014-Wide-1600x1000.jpg);
         background-attachment: fixed;
@@ -53,83 +57,98 @@
     }
     
     #primaryWrapper nav{
-        display: table;
+/*        display: table;*/
         margin-left: auto;
         margin-right: auto;
-        width: 60%;
     }
+/*
 
     header nav ul li {
         float: left;
-        width: 16.66%;
-        height: 50px;
-        padding: 12px;
+        padding: 7px;
         padding-left: 0.5px;
         padding-right: 0.5px;
+        padding-bottom: 0;
         box-sizing: border-box;
         display: block;
         border-left: 1px solid #555555;
         border-right: 1px solid #555555;
     }
+*/
     
     nav ul li a {
         font-size: 1em;
         display: block;
         color: #A1A1A1;
         text-decoration: none;
-        text-align: center;
+        text-align: center; 
+        padding-left: 0px;
+        padding-right: 0 px;
+        
     }
     
+/*
     nav ul li:hover,
     nav ul li a.active {
         background-color: #0000AC;
         color: #ffffff;
     }
-    
-    
-/*
-    nav ul li a:hover, 
-    nav ul li a.active{color: #ffffff}
-    
 */
+    
     div.primaryWrapper {
         width: 100%;
         background-color: #333333;
         border-top: 1px solid #555555;
     }
+        
+    #showcase h4{
+        
+    font-size: 30px;
+    font-size: 2.5vw;
+    }
     
     #row1 div{
         color: #ffffff;
+        height: 300px;
     }
     
     #row1 img{
         width: 100%;
-        height: 200px;
+        height: 100%;
     }
     
     #left{
         float: left;
-        width: 65%;
+        width: 64%;
         padding: 10px;
+        padding-right: 0;
+        
     }
     
     #right{
         float: right;
-        width: 25%;
+        width: 34%;
         padding: 10px;
+        padding-left: 0;
+        
     }
     
     * {
+        height: auto;
         margin: 0px;
         padding: 0px;
     }
+    
 </style>
+</head>
+
+
 
 <header>
     <a href="Homepage.html"><img id="logo" src="images/logo.png"></a>
     <div id="primaryWrapper">
         <nav>
-            <ul>
+            <ul class="nav nav-pills nav-justified" role="tablist"> 
                 <li><a href=#>PS4</a>
                 </li>
                 <li><a href=#>XBOX ONE</a>
@@ -150,14 +169,16 @@
 <body>
     <div id="background">
         <div id="centre">
-            <div id="row1">
-                <div id="left">
-                    <h4>Popular Titles</h4>
-                    <a href="#1" ><img src="gamescovers/download(1).jpg"></a>
-                </div>
-                <div id="right">
-                    <h4>Most Popular</h4>
-                    <a href="#1" ><img src="gamescovers/download(2).jpg"></a>
+            <div id="showcase">
+                <div id="row1">
+                    <div id="left">
+                        <h4 class="text-norap">Popular Titles</h4>
+                        <a href="#1" ><img src="gamescovers/download(1).jpg"></a>
+                    </div>
+                    <div id="right">
+                        <h4 class="text-nowrap" >Most Popular</h4>
+                        <a href="#1" ><img src="gamescovers/download(2).jpg"></a>
+                    </div>
                 </div>
             </div>
         </div>
