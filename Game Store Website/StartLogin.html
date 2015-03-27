@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Games, Anton, university">
+    <meta name="author" content="Grzegorz Goral, Anton Gashi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <title>AG Game Store</title>
+    <style>
+        * {
+            height: auto;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body {
+            background-color: #00005C
+        }
+        
+        #centre {
+            background-image: url(images/background.jpg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-color: #FF00FF;
+            background-blend-mode: multiply;
+            margin-left: auto;
+            margin-right: auto;
+            width: 55%;
+            height: 1080px;
+            background-size: 100% 200%;
+            font-size: 1em;
+        }
+        
+        #background {
+            background-image: url(images/2014-06-Mortal-Kombat-X-Cover-Game-2014-Wide-1600x1000.jpg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        
+        header {
+            background-color: #00005C;
+            padding: 0;
+            margin-bottom: 0px;
+            border-bottom: 2px solid #aaaaaa;
+        }
+        
+        header img {
+            width: 15%;
+            padding-left: 2%;
+        }
+        
+        #primaryWrapper {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #primaryWrapper nav {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /*
+
+    header nav ul li {
+        float: left;
+        padding: 7px;
+        padding-left: 0.5px;
+        padding-right: 0.5px;
+        padding-bottom: 0;
+        box-sizing: border-box;
+        display: block;
+        border-left: 1px solid #555555;
+        border-right: 1px solid #555555;
+    }
+*/
+        
+        nav {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        
+        nav ul li a {
+            font-size: 1em;
+            font-size: 1.5vw;
+            display: block;
+            color: #A1A1A1;
+            text-decoration: none;
+            text-align: center;
+        }
+        /*
+    nav ul li:hover,
+    nav ul li a.active {
+        background-color: #0000AC;
+        color: #ffffff;
+    }
+*/
+        
+        .nav-tabs {
+            border-bottom: 0px solid #ddd;
+        }
+        
+        .nav-tabs>li>a {
+            border-radius: 0;
+        }
+        
+        footer {
+            margin-left: auto;
+            margin-right: auto;
+            width: 55%;
+            background-color: #00005C;
+            background-attachment: fixed;
+        }
+        
+        footer nav ul li {
+            width: 25%;
+        }
+    </style>
+</head>
+
+
+
+<header>
+    <a href="Homepage.html"><img id="logo" src="images/logo.png">
+    </a>
+    <div id="primaryWrapper">
+        <nav>
+            <ul class="nav nav-pills nav-justified" role="tablist">
+                <li><a href=#>PS4</a>
+                </li>
+                <li><a href=#>XBOX ONE</a>
+                </li>
+                <li><a href=#>PS3</a>
+                </li>
+                <li><a href=#>XBOX 360</a>
+                </li>
+                <li><a href=#>PC</a>
+                </li>
+                <li><a href=#>NINTENDO</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <div id="background">
+        <div id="centre">
+        <h3>FOR AUTHORISED PERSONNEL ONLY</h3>
+
+        <p>Please enter your username and password here:</p>
+        <hr />
+
+        <form action="SpyStart.php" method="post">
+            <table>
+                <tr>
+                    <td>Username</td>
+
+                    <td>
+                        <input type="text" name="username" />
+                    </td>
+
+                    <td>Password</td>
+
+                    <td>
+                        <input type="password" name="password" />
+                    </td>
+                </tr>
+            </table>
+
+            <p>
+                <input type="submit" value="submit" />
+            </p>
+        </form>
+        </div>
+    </div>
+</body>
+<footer>
+
+    <nav>
+        <ul class="nav nav-tabs " role="tablist">
+            <li><a href=#>About Us</a>
+            </li>
+            <li><a href=#>Support</a>
+            </li>
+            <li><a href=#>Contact Us</a>
+            </li>
+            <li><a href=#>My Account</a>
+            </li>
+        </ul>
+    </nav>
+
+</footer>
+
+</html>
