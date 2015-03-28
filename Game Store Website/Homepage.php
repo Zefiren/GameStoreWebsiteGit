@@ -1,14 +1,22 @@
+<?php
+//display all errors
+error_reporting(E_ALL); 
+ini_set('display_errors', 1);
+//start session 
+session_start();
+//store username and password into session variables for later
+$_SESSION['username'] = $_POST['username'];
+$_SESSION['password'] = $_POST['password'];
+?>
 <!DOCTYPE HTML>
 <html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="Games, Anton, university">
-    <meta name="author" content="Grzegorz Goral">
+    <meta name="author" content="Grzegorz Goral, Anton Gashi">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <title>AG Game Store</title>
     <style>
         * {
@@ -17,7 +25,7 @@
             padding: 0px;
         }
         
-        body {
+        body{
             background-color: #00005C
         }
         
@@ -26,9 +34,11 @@
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-color: #FF00FF;
+            background-blend-mode: multiply;
             margin-left: auto;
             margin-right: auto;
             width: 55%;
+            height: 1080px;
             background-size: 100% 200%;
             font-size: 1em;
         }
@@ -90,13 +100,13 @@
             text-decoration: none;
             text-align: center;
         }
-        
-        nav ul li:hover,
-        nav ul li a.active {
-            background-color: #cccccc;
-            color: #0000AC;
-            border-radius: 0;
-        }
+        /*
+    nav ul li:hover,
+    nav ul li a.active {
+        background-color: #0000AC;
+        color: #ffffff;
+    }
+*/
         
         #showcase figcaption {
             font-size: 30px;
@@ -126,47 +136,31 @@
             color: #ffffff;
             padding: 10px;
             height: 300px;
-            margin-bottom: 20px;
         }
         
         #row1 figure {
             width: 100%;
             height: 100%;
-            margin: 0;
-            padding: 0;
             caption-side: bottom;
         }
         
         #row1 img {
             width: 100%;
-            height: 300px;
+            height: 100%;
         }
         
         #left {
             float: left;
             width: 64%;
-            height: 100% margin: 0;
-            padding: 0;
-        }
-        
-        #left img {
-            width: 100%;
-            margin: 0;
-            padding: 0;
+            height: 100%;
+            padding-right: 10px;
         }
         
         #right {
-            float: left;
+            float: right;
             width: 34%;
             height: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        
-        #right img {
-            width: 100%;
-            margin: 0;
-            padding: 0;
+            padding-left: 10px;
         }
         
         #row2 {
@@ -176,7 +170,6 @@
             padding: 10px;
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: 20px;
         }
         
         #row2 figure {
@@ -185,19 +178,17 @@
             caption-side: bottom;
         }
         
-        #row2 img {
+        #row2 figure img {
             width: 100%;
             height: 100%;
-            margin: 0;
-            padding: 0;
+            caption-side: bottom;
         }
         
         #row3 {
             color: #ffffff;
             width: 100%;
             height: 300px;
-            margin: 0;
-            padding: 0;
+            padding: 10px;
             /*            margin-left: auto;*/
             /*            margin-right: auto;*/
         }
@@ -207,15 +198,11 @@
             
             height: 100%;
             caption-side: bottom;
-            margin: 0;
-            padding: 0;
         }
         
-        #row3 img {
+        #row3 figure img {
             width: 100%;
             height: 100%;
-            margin: 0;
-            padding: 0;
         }
         
         #r3left {
@@ -223,7 +210,6 @@
             width: 25%;
             height: 100%;
             margin-right: 10%;
-            padding-bottom: 50px;
         }
         
         #r3middle {
@@ -232,7 +218,6 @@
             height: 100%;
             margin-left: 2%;
             margin-right: 2%;
-            padding-bottom: 50px;
         }
         
         #r3right {
@@ -240,14 +225,14 @@
             width: 25%;
             height: 100%;
             margin-left: 10%;
-            padding-bottom: 50px;
         }
         
         .nav-tabs {
-            border-bottom: 0px solid #dddddd;
+            border-bottom: 0px solid #ddd;
         }
         
-        .nav-tabs>li>a {
+        
+        .nav-tabs>li>a{
             border-radius: 0;
         }
         
@@ -258,17 +243,10 @@
             background-color: #00005C;
             background-attachment: fixed;
         }
-        
-        footer nav ul li {
+        footer nav ul li{
             width: 25%;
         }
-        /*
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      
-      
-  }
-*/
+        
     </style>
 </head>
 
@@ -280,17 +258,17 @@
     <div id="primaryWrapper">
         <nav>
             <ul class="nav nav-pills nav-justified" role="tablist">
-                <li><a href="ps4.php">PS4</a>
+                <li><a href=#>PS4</a>
                 </li>
-                <li><a href="xboxone.php" #>XBOX ONE</a>
+                <li><a href=#>XBOX ONE</a>
                 </li>
-                <li><a href="ps3.php">PS3</a>
+                <li><a href=#>PS3</a>
                 </li>
-                <li><a href="xbox360.php">XBOX 360</a>
+                <li><a href=#>XBOX 360</a>
                 </li>
-                <li><a href="pc.php">PC</a>
+                <li><a href=#>PC</a>
                 </li>
-                <li><a href="nintendo.php">NINTENDO</a>
+                <li><a href=#>NINTENDO</a>
                 </li>
             </ul>
         </nav>
@@ -305,53 +283,14 @@
                 <div id="row1">
                     <div id="left">
                         <figure>
-                            <div class="container" style="width:70%;">
-                                <br>
-                                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                                    <!-- Indicators -->
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                                        <li data-target="#myCarousel" data-slide-to="3"></li>
-                                    </ol>
-
-                                    <!-- Wrapper for slides -->
-                                    <div class="carousel-inner" role="listbox">
-                                        <div class="item active">
-                                            <a href="#1"><img src="gamescovers/download(1)" alt="Chania"></a>
-                                        </div>
-
-                                        <div class="item">
-                                            <a href="#2"><img src="gamescovers/download(2)" alt="Chania"></a>
-                                        </div>
-
-                                        <div class="item">
-                                            <a href="#1"><img src="gamescovers/download(3)" alt="Chania"></a>
-                                        </div>
-
-                                        <div class="item">
-                                            <a href="#1"><img src="gamescovers/download(4)" alt="Chania"></a>
-                                        </div>
-                                    </div>
-
-                                    <!-- Left and right controls -->
-                                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </div>
-                            </div>
+                            <a href="#1"><img src="gamescovers/download(1).jpg">
+                            </a>
                             <figcaption>Popular Titles</figcaption>
                         </figure>
                     </div>
                     <div id="right">
                         <figure>
-                            <a href="#1"><img src="gamescovers/download(1).jpg">
+                            <a href="#1"><img src="gamescovers/download(2).jpg">
                             </a>
                             <figcaption>Most Popular</figcaption>
                         </figure>
@@ -360,7 +299,7 @@
                 <br>
                 <div id="row2">
                     <figure>
-                        <a href="#1"><img src="gamescovers/download(4).jpg">
+                        <a href="#1"><img src="gamescovers/download(3).jpg">
                         </a>
                         <figcaption>Coming Soon</figcaption>
                     </figure>
@@ -368,7 +307,7 @@
                 <div id="row3">
                     <div id="r3left">
                         <figure>
-                            <a href="#1"><img src="gamescovers/download(5).jpg">
+                            <a href="#1"><img src="gamescovers/download(4).jpg">
                             </a>
                         </figure>
                     </div>
